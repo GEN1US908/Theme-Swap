@@ -1,12 +1,32 @@
+@use "normalize";
 .button__theme-swap {
   width: 600px;
   height: 600px;
   font-size: 70px;
+  background-image: url("../images/day.jfif");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid black;
+  transform: rotate(-360deg);
+  transition-duration: 1s;
 }
 body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1s;
   &.dark {
     color: white;
     background-color: black;
+
+    .button__theme-swap {
+      background-image: url("../images/night.jfif");
+      border-color: white;
+      transform: rotate(360deg);
+      transition-duration: 1s;
+    }
   }
 }
 
