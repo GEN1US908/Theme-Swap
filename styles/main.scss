@@ -1,0 +1,12 @@
+.button__theme-swap {
+  width: 600px;
+  height: 600px;
+  font-size: 70px;
+}
+body {
+  &.dark {
+    color: white;
+    background-color: black;
+  }
+}
+
